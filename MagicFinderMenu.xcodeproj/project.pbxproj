@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		671D3AA128E2E72000D079C1 /* MagicFinderMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D3AA028E2E72000D079C1 /* MagicFinderMenuApp.swift */; };
+		671D3AA328E2E72000D079C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D3AA228E2E72000D079C1 /* ContentView.swift */; };
+		671D3AA528E2E72100D079C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671D3AA428E2E72100D079C1 /* Assets.xcassets */; };
+		671D3AA828E2E72100D079C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 671D3AA728E2E72100D079C1 /* Preview Assets.xcassets */; };
+		671D3ACC28E3305D00D079C1 /* AddMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D3ACB28E3305D00D079C1 /* AddMenu.swift */; };
+		672C0A6428E42DCB00E3DAFD /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672C0A6328E42DCB00E3DAFD /* FinderSync.swift */; };
+		672C0A6928E42DCB00E3DAFD /* MagicFinderMenuFinderExtention.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 672C0A6128E42DCB00E3DAFD /* MagicFinderMenuFinderExtention.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		672C0A6D28E42EFD00E3DAFD /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0B3AE28E404270011D5AA /* Common.framework */; };
+		672C0A6E28E42EFD00E3DAFD /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0B3AE28E404270011D5AA /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67A0B3B428E404270011D5AA /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0B3AE28E404270011D5AA /* Common.framework */; };
+		67A0B3B528E404270011D5AA /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67A0B3AE28E404270011D5AA /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67A0B3BE28E404390011D5AA /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 67A0B3BD28E404390011D5AA /* SQLite */; };
+		67A0B3BF28E404420011D5AA /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0B39B28E401770011D5AA /* DBManager.swift */; };
+		67A0B3C028E404420011D5AA /* MenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D3AC528E32AFB00D079C1 /* MenuType.swift */; };
+		67A0B3C128E404420011D5AA /* MenuInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D3AC328E32A5600D079C1 /* MenuInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		672C0A6728E42DCB00E3DAFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671D3A9528E2E72000D079C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 672C0A6028E42DCB00E3DAFD;
+			remoteInfo = MagicFinderMenuFinderExtention;
+		};
+		672C0A6F28E42EFD00E3DAFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671D3A9528E2E72000D079C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67A0B3AD28E404270011D5AA;
+			remoteInfo = Common;
+		};
+		67A0B3B228E404270011D5AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 671D3A9528E2E72000D079C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67A0B3AD28E404270011D5AA;
+			remoteInfo = Common;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		671D3ABC28E2F5C600D079C1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				672C0A6928E42DCB00E3DAFD /* MagicFinderMenuFinderExtention.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		672C0A7128E42EFD00E3DAFD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				672C0A6E28E42EFD00E3DAFD /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A0B38128E3FFE40011D5AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67A0B3B528E404270011D5AA /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		671D3A9D28E2E72000D079C1 /* MagicFinderMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicFinderMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		671D3AA028E2E72000D079C1 /* MagicFinderMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicFinderMenuApp.swift; sourceTree = "<group>"; };
+		671D3AA228E2E72000D079C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		671D3AA428E2E72100D079C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		671D3AA728E2E72100D079C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		671D3AA928E2E72100D079C1 /* MagicFinderMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagicFinderMenu.entitlements; sourceTree = "<group>"; };
+		671D3AC328E32A5600D079C1 /* MenuInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInfo.swift; sourceTree = "<group>"; };
+		671D3AC528E32AFB00D079C1 /* MenuType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuType.swift; sourceTree = "<group>"; };
+		671D3ACB28E3305D00D079C1 /* AddMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenu.swift; sourceTree = "<group>"; };
+		672C0A6128E42DCB00E3DAFD /* MagicFinderMenuFinderExtention.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MagicFinderMenuFinderExtention.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		672C0A6328E42DCB00E3DAFD /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		672C0A6528E42DCB00E3DAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		672C0A6628E42DCB00E3DAFD /* MagicFinderMenuFinderExtention.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MagicFinderMenuFinderExtention.entitlements; sourceTree = "<group>"; };
+		67A0B39B28E401770011D5AA /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		67A0B3AE28E404270011D5AA /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		671D3A9A28E2E72000D079C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A0B3B428E404270011D5AA /* Common.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		672C0A5E28E42DCB00E3DAFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				672C0A6D28E42EFD00E3DAFD /* Common.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A0B3AB28E404270011D5AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A0B3BE28E404390011D5AA /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		671D3A9428E2E72000D079C1 = {
+			isa = PBXGroup;
+			children = (
+				671D3A9F28E2E72000D079C1 /* MagicFinderMenu */,
+				67A0B3AF28E404270011D5AA /* Common */,
+				672C0A6228E42DCB00E3DAFD /* MagicFinderMenuFinderExtention */,
+				671D3A9E28E2E72000D079C1 /* Products */,
+				67A0B38528E400E70011D5AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		671D3A9E28E2E72000D079C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				671D3A9D28E2E72000D079C1 /* MagicFinderMenu.app */,
+				67A0B3AE28E404270011D5AA /* Common.framework */,
+				672C0A6128E42DCB00E3DAFD /* MagicFinderMenuFinderExtention.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		671D3A9F28E2E72000D079C1 /* MagicFinderMenu */ = {
+			isa = PBXGroup;
+			children = (
+				671D3AA028E2E72000D079C1 /* MagicFinderMenuApp.swift */,
+				671D3AA228E2E72000D079C1 /* ContentView.swift */,
+				671D3AA428E2E72100D079C1 /* Assets.xcassets */,
+				671D3AA928E2E72100D079C1 /* MagicFinderMenu.entitlements */,
+				671D3AA628E2E72100D079C1 /* Preview Content */,
+				671D3ACB28E3305D00D079C1 /* AddMenu.swift */,
+			);
+			path = MagicFinderMenu;
+			sourceTree = "<group>";
+		};
+		671D3AA628E2E72100D079C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				671D3AA728E2E72100D079C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		672C0A6228E42DCB00E3DAFD /* MagicFinderMenuFinderExtention */ = {
+			isa = PBXGroup;
+			children = (
+				672C0A6328E42DCB00E3DAFD /* FinderSync.swift */,
+				672C0A6528E42DCB00E3DAFD /* Info.plist */,
+				672C0A6628E42DCB00E3DAFD /* MagicFinderMenuFinderExtention.entitlements */,
+			);
+			path = MagicFinderMenuFinderExtention;
+			sourceTree = "<group>";
+		};
+		67A0B38528E400E70011D5AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67A0B3AF28E404270011D5AA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				671D3AC528E32AFB00D079C1 /* MenuType.swift */,
+				671D3AC328E32A5600D079C1 /* MenuInfo.swift */,
+				67A0B39B28E401770011D5AA /* DBManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		67A0B3A928E404270011D5AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		671D3A9C28E2E72000D079C1 /* MagicFinderMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 671D3AAC28E2E72100D079C1 /* Build configuration list for PBXNativeTarget "MagicFinderMenu" */;
+			buildPhases = (
+				671D3A9928E2E72000D079C1 /* Sources */,
+				671D3A9A28E2E72000D079C1 /* Frameworks */,
+				671D3A9B28E2E72000D079C1 /* Resources */,
+				671D3ABC28E2F5C600D079C1 /* Embed Foundation Extensions */,
+				67A0B38128E3FFE40011D5AA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67A0B3B328E404270011D5AA /* PBXTargetDependency */,
+				672C0A6828E42DCB00E3DAFD /* PBXTargetDependency */,
+			);
+			name = MagicFinderMenu;
+			packageProductDependencies = (
+			);
+			productName = MagicFinderMenu;
+			productReference = 671D3A9D28E2E72000D079C1 /* MagicFinderMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		672C0A6028E42DCB00E3DAFD /* MagicFinderMenuFinderExtention */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 672C0A6A28E42DCB00E3DAFD /* Build configuration list for PBXNativeTarget "MagicFinderMenuFinderExtention" */;
+			buildPhases = (
+				672C0A5D28E42DCB00E3DAFD /* Sources */,
+				672C0A5E28E42DCB00E3DAFD /* Frameworks */,
+				672C0A5F28E42DCB00E3DAFD /* Resources */,
+				672C0A7128E42EFD00E3DAFD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				672C0A7028E42EFD00E3DAFD /* PBXTargetDependency */,
+			);
+			name = MagicFinderMenuFinderExtention;
+			productName = MagicFinderMenuFinderExtention;
+			productReference = 672C0A6128E42DCB00E3DAFD /* MagicFinderMenuFinderExtention.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		67A0B3AD28E404270011D5AA /* Common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67A0B3B628E404270011D5AA /* Build configuration list for PBXNativeTarget "Common" */;
+			buildPhases = (
+				67A0B3A928E404270011D5AA /* Headers */,
+				67A0B3AA28E404270011D5AA /* Sources */,
+				67A0B3AB28E404270011D5AA /* Frameworks */,
+				67A0B3AC28E404270011D5AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Common;
+			packageProductDependencies = (
+				67A0B3BD28E404390011D5AA /* SQLite */,
+			);
+			productName = Common;
+			productReference = 67A0B3AE28E404270011D5AA /* Common.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		671D3A9528E2E72000D079C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					671D3A9C28E2E72000D079C1 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					672C0A6028E42DCB00E3DAFD = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					67A0B3AD28E404270011D5AA = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 671D3A9828E2E72000D079C1 /* Build configuration list for PBXProject "MagicFinderMenu" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 671D3A9428E2E72000D079C1;
+			packageReferences = (
+				671D3AC028E3282B00D079C1 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
+			productRefGroup = 671D3A9E28E2E72000D079C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				671D3A9C28E2E72000D079C1 /* MagicFinderMenu */,
+				67A0B3AD28E404270011D5AA /* Common */,
+				672C0A6028E42DCB00E3DAFD /* MagicFinderMenuFinderExtention */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		671D3A9B28E2E72000D079C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671D3AA828E2E72100D079C1 /* Preview Assets.xcassets in Resources */,
+				671D3AA528E2E72100D079C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		672C0A5F28E42DCB00E3DAFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A0B3AC28E404270011D5AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		671D3A9928E2E72000D079C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671D3ACC28E3305D00D079C1 /* AddMenu.swift in Sources */,
+				671D3AA328E2E72000D079C1 /* ContentView.swift in Sources */,
+				671D3AA128E2E72000D079C1 /* MagicFinderMenuApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		672C0A5D28E42DCB00E3DAFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				672C0A6428E42DCB00E3DAFD /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A0B3AA28E404270011D5AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A0B3C028E404420011D5AA /* MenuType.swift in Sources */,
+				67A0B3BF28E404420011D5AA /* DBManager.swift in Sources */,
+				67A0B3C128E404420011D5AA /* MenuInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		672C0A6828E42DCB00E3DAFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 672C0A6028E42DCB00E3DAFD /* MagicFinderMenuFinderExtention */;
+			targetProxy = 672C0A6728E42DCB00E3DAFD /* PBXContainerItemProxy */;
+		};
+		672C0A7028E42EFD00E3DAFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67A0B3AD28E404270011D5AA /* Common */;
+			targetProxy = 672C0A6F28E42EFD00E3DAFD /* PBXContainerItemProxy */;
+		};
+		67A0B3B328E404270011D5AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67A0B3AD28E404270011D5AA /* Common */;
+			targetProxy = 67A0B3B228E404270011D5AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		671D3AAA28E2E72100D079C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		671D3AAB28E2E72100D079C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		671D3AAD28E2E72100D079C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MagicFinderMenu/MagicFinderMenu.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MagicFinderMenu/Preview Content\"";
+				DEVELOPMENT_TEAM = E8PMV7B653;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = site.ownw.MagicFinderMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		671D3AAE28E2E72100D079C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MagicFinderMenu/MagicFinderMenu.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MagicFinderMenu/Preview Content\"";
+				DEVELOPMENT_TEAM = E8PMV7B653;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = site.ownw.MagicFinderMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		672C0A6B28E42DCB00E3DAFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MagicFinderMenuFinderExtention/MagicFinderMenuFinderExtention.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E8PMV7B653;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagicFinderMenuFinderExtention/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MagicFinderMenuFinderExtention;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = site.ownw.MagicFinderMenu.MagicFinderMenuFinderExtention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		672C0A6C28E42DCB00E3DAFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MagicFinderMenuFinderExtention/MagicFinderMenuFinderExtention.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = E8PMV7B653;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagicFinderMenuFinderExtention/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MagicFinderMenuFinderExtention;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = site.ownw.MagicFinderMenu.MagicFinderMenuFinderExtention;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		67A0B3B728E404270011D5AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = E8PMV7B653;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = site.ownw.Common;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67A0B3B828E404270011D5AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = E8PMV7B653;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = site.ownw.Common;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		671D3A9828E2E72000D079C1 /* Build configuration list for PBXProject "MagicFinderMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671D3AAA28E2E72100D079C1 /* Debug */,
+				671D3AAB28E2E72100D079C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		671D3AAC28E2E72100D079C1 /* Build configuration list for PBXNativeTarget "MagicFinderMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				671D3AAD28E2E72100D079C1 /* Debug */,
+				671D3AAE28E2E72100D079C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		672C0A6A28E42DCB00E3DAFD /* Build configuration list for PBXNativeTarget "MagicFinderMenuFinderExtention" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				672C0A6B28E42DCB00E3DAFD /* Debug */,
+				672C0A6C28E42DCB00E3DAFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67A0B3B628E404270011D5AA /* Build configuration list for PBXNativeTarget "Common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67A0B3B728E404270011D5AA /* Debug */,
+				67A0B3B828E404270011D5AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		671D3AC028E3282B00D079C1 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 0.14.0;
+				minimumVersion = 0.13.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67A0B3BD28E404390011D5AA /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 671D3AC028E3282B00D079C1 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 671D3A9528E2E72000D079C1 /* Project object */;
+}
